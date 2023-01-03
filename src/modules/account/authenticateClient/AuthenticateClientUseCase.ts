@@ -1,6 +1,6 @@
 import { prisma } from "../../../database/prismaClient";
-import { compare } from "bcrypt"
-import { sign } from "jsonwebtoken"
+import { compare } from "bcrypt";
+import { sign } from "jsonwebtoken";
 
 interface IAuthenticateClient {
   username: string;
@@ -31,6 +31,5 @@ export class AuthenticateClientUseCase {
     });
 
     return token;
-    
   }
 }
